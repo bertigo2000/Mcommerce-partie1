@@ -92,7 +92,7 @@ public class ProductController {
     public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
     	
     	
-    	if((product==null) || (product.getPrixAchat()<=0)) throw new ProduitGratuitException("Le produit que vous voulez enregistrer possède un prix d'achat inférieur ou égale à zéro.");
+    	if((product==null) || (product.getPrixAchat()<=0)) throw new ProduitGratuitException("Le produit que vous voulez enregistrer possède un prix d'achat inférieur ou égale à zéro (Produt Gratuit).");
         
     	Product productAdded =  productDao.save(product);
 
