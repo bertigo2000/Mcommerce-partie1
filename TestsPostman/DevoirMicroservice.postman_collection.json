@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "8a5742a8-5364-4a93-89b4-355f5c556626",
+		"name": "DevoirMicroservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"Laptop LENOVO\",\n \"prix\":92000,\n \"prixAchat\":46800\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Liste de prduits"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"Laptop LENOVO\",\n \"prix\":92000,\n \"prixAchat\":46800\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Creation d'u nouveau produit."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"SOURIS USB\",\n \"prix\":2500,\n \"prixAchat\":0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Création d'un nouveau produit avec le prx d'achat inférieur ou égale à 0."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"Casque Bluetooth\",\n \"prix\":4500,\n \"prixAchat\":2600\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Création d'u nouveau produit."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"SOURIS USB\",\n \"prix\":2500,\n \"prixAchat\":0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Création d'un nouveau avec un prix d'achat égale à 0 pour teste de la validation."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"SOURIS USB\",\n \"prix\":2500,\n \"prixAchat\":1200\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Liste des produits non trié"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/TrieProduits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"Ip\",\n \"prix\":23\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/TrieProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"TrieProduits"
+					]
+				},
+				"description": "Liste des produits triés par nom"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/AdminProduits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n \"nom\": \"Ip\",\n \"prix\":23\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/AdminProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				},
+				"description": "Calcul de la marge beneficiaire sur chaque produit."
+			},
+			"response": []
+		}
+	]
+}
