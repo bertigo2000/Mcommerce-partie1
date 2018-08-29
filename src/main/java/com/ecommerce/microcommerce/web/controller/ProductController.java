@@ -138,7 +138,7 @@ public class ProductController {
 
 
 
-    @ApiOperation(value = "Affiche les produits avec leurs marges beneficiaire")
+    @ApiOperation(value = "Affiche les produits avec la marge beneficiaire par produit")
     @GetMapping(value = "/AdminProduits")
     public MappingJacksonValue calculerMargeProduit(){
     	
@@ -163,6 +163,8 @@ public class ProductController {
     	return produitsFiltres;
     	
     }
+    
+    
     
     @ApiOperation(value = "Affiche les produits triés par ordre aphabetique des noms!")
     @GetMapping (value = "/TrieProduits")
